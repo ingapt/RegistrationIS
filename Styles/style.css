@@ -109,6 +109,7 @@ input[type=submit]{
     width: 40%;
     cursor: pointer;
     position: relative;
+    margin: 10px;
 }
 
 .registration a:link, p a:link{

@@ -11,7 +11,7 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/Project/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Registracija</title>
 </head>
 <body>
@@ -23,11 +23,11 @@
         <h1>Registracija</h1>
         <form action="">
             <label for="Username"></label>
-            <input type="text" name = "Username" id="username" placeholder="Įveskite vartotojo vardą" minlength="3" maxlength="20" required/>
+            <input type="text" name = "Username" id="UserName" placeholder="Įveskite vartotojo vardą" minlength="3" maxlength="20" required/>
             <label for="Password"></label>
-            <input type="password" name="Password" id="password" placeholder="Įveskite slaptažodį" minlength="8" required />
+            <input type="password" name="Password" id="Password" placeholder="Įveskite slaptažodį" minlength="8" required />
             <label for="Roles">Pasirinkite: </label>
-            <select name="Roles" id="roles" required>
+            <select name="Role" id="Role" required>
                 <option value="worker">Darbuotojas</option>
                 <option value="specialist">IT Specialistas</option>
                 <option value="school">Moksleivis</option>
@@ -38,7 +38,7 @@
             <input type="submit" value="Registruotis">
         </form>
 
-        <p><a href="/Project/index.html">Grįžti atgal</a></p>
+        <p><a href="/index.html">Grįžti atgal</a></p>
     </main>
 </body>
 </html>
