@@ -1,3 +1,5 @@
+const ENDPOINT = 'https://localhost:7115/swagger/index.html';
+
 const UserInfoFromBackend = (user) => {
 const img = document.createElement('img');
 img.src = user.picture.large;
@@ -32,7 +34,7 @@ tbody.append(tr);
 
 const fetchUserInfo = async() => {
     try{
-        const response = await fetch('https://localhost:7244/WeatherForecast');
+        const response = await fetch(ENDPOINT);
         if(response.ok)
         {
             const user = await response.json();
