@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Project/styles/style.css">
+    <title>Registracija</title>
+</head>
+<body>
+    <header>
+        <div class="first"><h1>Žmogaus užregistravimo sistema</h1></div>
+        <div class="third"><h3>Viskas laiku ateina tiems, kurie moka laukti...</h3></div>
+    </header>
+    <main>
+        <h1>Registracija</h1>
+        <form action="">
+            <label for="Username"></label>
+            <input type="text" name = "Username" id="username" placeholder="Įveskite vartotojo vardą" minlength="3" maxlength="20" required/>
+            <label for="Password"></label>
+            <input type="password" name="Password" id="password" placeholder="Įveskite slaptažodį" minlength="8" required />
+            <label for="Roles">Pasirinkite: </label>
+            <select name="Roles" id="roles" required>
+                <option value="worker">Darbuotojas</option>
+                <option value="specialist">IT Specialistas</option>
+                <option value="school">Moksleivis</option>
+                <option value="student">Studentas</option>
+                <option value="user">Vartotojas</option> 
+                <option value="unemployed">Bedarbis</option>   
+            </select>
+            <input type="submit" value="Registruotis">
+        </form>
+
+        <p><a href="/Project/index.html">Grįžti atgal</a></p>
+    </main>
+</body>
+</html>

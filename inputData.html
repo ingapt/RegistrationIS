@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Įvesti duomenis</title>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Project/Styles/style.css">
+    <script src="profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="first"><h1>Žmogaus užregistravimo sistema</h1></div>
+        <div class="third"><h3>Viskas laiku ateina tiems, kurie moka laukti...</h3></div>
+    </header>
+    <main>
+        <p>Duomenų įvedimas </p>
+        <div class="twoFormInput">   
+            <form action="">
+                <div>
+                    <p>Informacija apie jus: </p>
+                    <p>Įkelkite savo nuotrauką. </p>
+                    <input type="file" id="file" name="fileName" required/>
+                    <input type="text" name="name" id="name"  placeholder="Jūsų vardas" required />
+                    <input type="text" name="surname" id="surname" placeholder="Jūsų pavardė" required />
+                    <input type="number" name="code" id="code" placeholder="Jūsų asmens kodas" length="11" required /> 
+                    <input type="number" name="phone" id="phone" placeholder="Jūsų telefono numeris" length="9" required />
+                    <input type="email" name="email", id="email", placeholder="Jūsų el. pašto adresas" required/>
+                </div>
+                <div class="address">
+                    <p>Gyvenamoji vieta</p>
+                    <input type="text" name="street" id="street", placeholder="Gatvė" required />
+                    <input type="number" name="house" id="house" placeholder="Namo numeris" max-length="3" required /> 
+                    <input type="number" name="flat" id="flat" placeholder="Buto numeris" max-length="4" required /> 
+                    <input type="text" name="city" id="city" placeholder="Miesas" required />
+                </div>          
+                <input type="submit" value="Įvesti"/>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

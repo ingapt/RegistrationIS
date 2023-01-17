@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: #20b2aa;
+}
+
+header .first{
+    color: #eee;
+    text-shadow: #666;
+    text-align: center;
+    padding: 15px;
+}
+
+header .third{
+    color: white;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+header h1, 
+header h3{
+    margin: 0;
+}
+
+header h1{
+    font-size: 25px;
+    padding-top: 15px;
+    text-transform: capitalize;
+}
+
+header h3{
+    font-size: 15px;
+    font-variant: small-caps;
+}
+main{
+    display: block;
+    background-color: #eee;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 20px;
+    box-shadow: 1px 1px 2px #eee;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: large;
+    text-transform: capitalize;
+    text-align: center;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+h4, p{
+    font-size: small;
+    color:#333;
+    text-align: right;
+}
+
+p.putInfo{
+   text-align: left;
+   padding: 5px;
+   margin-top: 0px;
+}
+
+p.putInfo a{
+    font-size: large;
+    font-weight: bold;
+}
+
+p.cont{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#roles, input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#roles {
+    border: 1px solid black;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid #666;
+}
+
+input[type=submit]{
+    background-color: #333;
+    color: white;
+    width: 40%;
+    cursor: pointer;
+    position: relative;
+}
+
+.registration a:link, p a:link{
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+.registration a:visited, p a:visited{
+    color: blue;
+}
+
+.registration a:hover, p a:hover{
+    color: red;
+}
+
+.registration a:active, p a:active{
+    color: yellow;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 411px){
+    header{
+        height: 120px;
+    }
+
+    header h1{
+        font-size: 15px;
+        
+    }
+
+    header .first{
+        padding: 2px;
+        margin: 2px;
+    }
+    
+    header .third{
+        color: white;
+        padding: 2px;
+        margin: 2px;
+        margin-left: 2px;
+    }
+
+    input[type=submit]{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 540px){
+    main{
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 910px){
+    header h1{
+        font-size: 25px;
+    }
+
+    header h3{
+        font-size: 20px;
+    }
+
+    main{
+        max-width: 500px;
+        padding-bottom: 10px;
+    }
+
+    main label, main input, main #roles{
+        font-size: 20px;
+    }
+
+    main h4, main a{
+        font-size: 15px;
+    }
+
+    p.putInfo a{
+        font-size: x-large;
+    }
+
+    table, tr, th, td{
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1023px)
+{
+    header{
+        height: 250px;
+    }
+
+    header h1{
+        font-size: 40px;
+    }
+
+    header  h3, main label, main input, main #roles,
+    table, tr, th, td{
+        font-size: 30px;
+    }
+    
+    main{
+        margin-top: 100px;
+        width: 500px;
+    }
+    main h1{
+        font-size: 35px;
+    }
+
+    main h4, main a{
+        font-size: 25px;
+    }
+    
+    p.putInfo a{
+        font-size: x-large;
+    }
+
+    p.cont{
+        font-style: xx-large;
+    }
+
+    table, tr, th, td{
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1279px){
+    main{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+   header h1{
+    font-size: larger;
+   }
+
+    header h3{
+        font-size: large;
+   }
+
+   main{
+       width: 750px;
+       margin-top: 120px;
+   }
+
+}
