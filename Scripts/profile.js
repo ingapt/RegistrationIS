@@ -1,4 +1,4 @@
-const ENDPOINT = 'https://localhost:7115/swagger/index.html';
+const ENDPOINT = 'https://localhost:7115/';
 
 const UserInfoFromBackend = (user) => {
 const img = document.createElement('img');

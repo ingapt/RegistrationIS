@@ -15,16 +15,18 @@
     <link rel="stylesheet" href="/styles/style.css"> 
 </head>
 <body>
-    <header>
-        <div class="first"><h1>Žmogaus užregistravimo sistema</h1></div>
-        <div class="third"><h3>Viskas laiku ateina tiems, kurie moka laukti...</h3></div>
+    <header id="content-type">
+        <div class="grid-item"><h1>Žmogaus užregistravimo sistema</h1></div>
+        <div class="grid-item">
+          <h3>Viskas laiku ateina tiems, kurie moka laukti...</h3>
+        </div>
     </header>
     <main>
-            <form action="">
+        <form action="">
             <label for="username">Prisijungimo vardas: </label>
-            <input type="text" name="username" id="UserName" placeholder="User" minlength="3" maxlength="20" required/>
+            <input type="text" name="username" id="UserName" placeholder="Username"/>
             <label for="password">Slaptažodis:</label>
-            <input type="password" id="Password" name="Password", placeholder="****" minlength="8" required/>
+            <input type="password" id="Password" name="Password", placeholder="****"/>
             <input type="submit" value="Prisijungti">
         </form>
         <br/>
