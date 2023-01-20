@@ -1,3 +1,4 @@
+//Registration
 const saveSubmit = document.querySelector('#SubmitReg');
 const usernameInput = document.querySelector('#userName');
 const passwordInput = document.querySelector('#password');
@@ -27,8 +28,6 @@ function addUser(username, password, role) {
   })
     .then((data) => data.json())
     .then((response) => console.log(response));
-
-    RegistrationSuccess();
 }
 
 function Validate()
@@ -90,4 +89,12 @@ saveSubmit.addEventListener('click', function(e){
     e.preventDefault();
     Validate();
     addUser(usernameInput.value, passwordInput.value, roleSelector.value);
+    RegistrationSuccess();
 });
+
+//Login
+const username = document.querySelector('#username');
+const password = document.querySelector('#password');
+
+const form = document.querySelector('#login');
+btnLogin.addEventListener('Click')

@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prisijungimas</title>
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
-        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/styles/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
     <header id="content-type">
-        <div class="grid-item"><h1>Žmogaus užregistravimo sistema</h1></div>
         <div class="grid-item">
-          <h3>Viskas laiku ateina tiems, kurie moka laukti...</h3>
+            <h1>Žmogaus užregistravimo sistema</h1>
+        </div>
+        <div class="grid-item">
+            <h3>Viskas laiku ateina tiems, kurie moka laukti...</h3>
         </div>
     </header>
     <main>
-        <form action="">
-            <label for="username">Prisijungimo vardas: </label>
-            <input type="text" name="username" id="UserName" placeholder="Username"/>
-            <label for="password">Slaptažodis:</label>
-            <input type="password" id="Password" name="Password", placeholder="****"/>
-            <input type="submit" value="Prisijungti">
-        </form>
-        <br/>
+        <h1 class="reg">Prisijungimas</h1>
+        <div id="wrapper">
+            <form action="/profile.html" id="login">
+                <div>
+                    <label for="username">Prisijungimo vardas: </label><br />
+                    <input type="text" class="textInput" name="username" id="UserName"/>
+                    <div id="name_error" class="val_error"></div>
+                </div>
+                <div>
+                    <label for="password">Slaptažodis:</label><br />
+                    <input type="password" class="textInput" id="Password" name="Password"/>
+                    <div id="password_error" class="val_error"></div>
+                </div>
+                <input type="button" class="btn" id="btnLogin" value="Prisijungti">
+            </form>
+        </div>
+
         <div>
-            <h4>Naujas vartotojas: <span class="registration"><a href="/registration.html">Registracija</a><span><h4> 
+            <h4>Naujas vartotojas: <span class="registration"><a href="/registration.html">Registracija</a><span></h4>
         </div>
     </main>
 </body>
+
 </html>

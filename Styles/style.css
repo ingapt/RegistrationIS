@@ -56,8 +56,18 @@ form{
     margin: 100px auto;
 }
 
+form .inputForm{
+    width: 80%;
+    margin: 0 auto;
+}
+
 form div{
     margin: 3px auto;
+}
+
+form div label{
+    font-weight: bold;
+   
 }
 
 .textInput{
@@ -66,7 +76,8 @@ form div{
     border-bottom: 1px solid #5e6e66;
     font-size: 16px;
     padding: 2px;
-    width: 100%
+    width: 100%;
+    margin: 2px;
 }
 
 #roles{
