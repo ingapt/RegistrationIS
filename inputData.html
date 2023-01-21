@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Įvesti duomenis</title>
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" 
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/Project/Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Styles/style.css">
     <script src="profile.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="first"><h1>Žmogaus užregistravimo sistema</h1></div>
-        <div class="third"><h3>Viskas laiku ateina tiems, kurie moka laukti...</h3></div>
+    <header id="content-type">
+        <div class="grid-item">
+            <h1>Žmogaus užregistravimo sistema</h1>
+        </div>
+        <div class="grid-item">
+            <h3>Viskas laiku ateina tiems, kurie moka laukti...</h3>
+        </div>
     </header>
     <main>
-        <p>Duomenų įvedimas </p>
-        <div class="twoFormInput">   
-            <form action="">
-                <div>
-                    <p>Informacija apie jus: </p>
-                    <p>Įkelkite savo nuotrauką. </p>
-                    <input type="file" id="Photo" name="photo" required/>
-                    <input type="text" name="name" id="Name"  placeholder="Jūsų vardas" required />
-                    <input type="text" name="surname" id="Surname" placeholder="Jūsų pavardė" required />
-                    <input type="number" name="code" id="PersonalCode" placeholder="Jūsų asmens kodas" length="11" required /> 
-                    <input type="text" name="phone" id="PhoneNumber" placeholder="Jūsų telefono numeris" length="9" required />
-                    <input type="email" name="email", id="Email", placeholder="Jūsų el. pašto adresas" required/>
+        <h1 class="reg">Duomenų įvedimas</h1>
+        <div id="wrapper">
+            <div class="TwoForms">     
+                <div class="userInfo">
+                    <p>Informacija apie jus:</p>
+                    <form action="">
+                        <div class="userphoto">
+                            <label for="photo">Įkelkite savo nuotrauką. </label>
+                            <input type="file" id="photo" name="photo" required />
+                        </div>
+                        <div>
+                            <input type="text" class="TextInput" name="name" id="name" placeholder="Jūsų vardas"
+                                required />
+                            <div id="name-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="text" class="TextInput" name="surname" id="surname" placeholder="Jūsų pavardė"
+                                required />
+                            <div id="surname-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="number" class="TextInput" name="code" id="personalCode"
+                                placeholder="Jūsų asmens kodas" length="11" required />
+                            <div id="personal-code-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="text" class="TextInput" name="phone" id="phoneNumber"
+                                placeholder="Jūsų telefono numeris" length="9" required />
+                            <div id="phonenumber-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="email" class="TextInput" name="email" , id="email" ,
+                                placeholder="Jūsų el. pašto adresas" required />
+                            <div id="email-error" class="val_error"></div>
+                        </div>
+                    </form>
                 </div>
                 <div class="address">
                     <p>Gyvenamoji vieta</p>
-                    <input type="text" name="street" id="Street", placeholder="Gatvė" required />
-                    <input type="number" name="house" id="HouseNumber" placeholder="Namo numeris" max-length="3" required /> 
-                    <input type="number" name="flat" id="FlatNumber" placeholder="Buto numeris" max-length="4" required /> 
-                    <input type="text" name="city" id="City" placeholder="Miesas" required />
-                </div>          
-                <input type="submit" value="Įvesti"/>
-            </form>
+                    <form action="">
+                        <div>
+                            <input type="text" class="TextInput" name="street" id="street" , placeholder="Gatvė"
+                                required />
+                            <div id="street-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="number" class="TextInput" name="house" id="houseNumber"
+                                placeholder="Namo numeris" max-length="3" required />
+                            <div id="name-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="number" class="TextInput" name="flat" id="flatNumber"
+                                placeholder="Buto numeris" max-length="4" required />
+                            <div id="name-error" class="val_error"></div>
+                        </div>
+                        <div>
+                            <input type="text" class="TextInput" name="city" id="city" placeholder="Miesas" required />
+                            <div id="name-error" class="val_error"></div>
+                        </div>
+                        <input type="button" class="btn" id="enter" value="Įvesti" />
+                    </form>
+                </div>
+            </div>
         </div>
+        <script src="/Scripts/InsertUserInfoToDb.js"></script>
     </main>
 </body>
+
 </html>

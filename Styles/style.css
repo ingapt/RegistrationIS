@@ -109,30 +109,6 @@ form div label{
     color: #ff1f1f;
 }
 
-h4, p{
-    font-size: small;
-    color:#333;
-    text-align: right;
-}
-
-p.putInfo{
-   text-align: left;
-   padding: 5px;
-   margin-top: 0px;
-}
-
-p.putInfo a{
-    font-size: large;
-    font-weight: bold;
-}
-
-p.cont{
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
-    text-transform: capitalize;
-}
-
 .registration a:link, p a:link{
     font-weight: bold;
     text-decoration: none;
@@ -149,6 +125,31 @@ p.cont{
 
 .registration a:active, p a:active{
     color: yellow;
+}
+
+/*InputData*/
+
+div#wrapper div.twoForms, .userInfo p, .address p{
+    font-weight: bold;
+    color: blue;
+}
+
+div#wrapper div.twoForms{
+   
+    position: absolute;
+}
+
+div#wrapper div.twoForms p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 30px;
+}
+
+div.TwoForms div.userInfo div.address
+{
+    position: relative;
+    font-weight: bold;
+
 }
 
 @media only screen and (min-width: 1280px){
