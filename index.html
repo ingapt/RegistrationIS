@@ -27,13 +27,13 @@
             <form action="/profile.html" id="login">
                 <div>
                     <label for="username">Prisijungimo vardas: </label><br />
-                    <input type="text" class="textInput" name="username" id="UserName"/>
-                    <div id="name_error" class="val_error"></div>
+                    <input type="text" class="textInput" name="username" id="username"/>
+                    <span class="error-message"></span>
                 </div>
                 <div>
                     <label for="password">Slaptažodis:</label><br />
-                    <input type="password" class="textInput" id="Password" name="Password"/>
-                    <div id="password_error" class="val_error"></div>
+                    <input type="password" class="textInput" id="password" name="password"/>
+                    <span class="error-message"></span>
                 </div>
                 <input type="button" class="btn" id="btnLogin" value="Prisijungti">
             </form>
@@ -42,6 +42,8 @@
         <div>
             <h4>Naujas vartotojas: <span class="registration"><a href="/registration.html">Registracija</a><span></h4>
         </div>
+
+        <script src="/Scripts/login.js"></script>
     </main>
 </body>
 
