@@ -14,38 +14,39 @@
     />
     <link rel="stylesheet" href="/Styles/style.css"> 
 </head>
-<body>
-    <header>
-        <div class="first"><h1>Žmogaus užregistravimo sistema</h1></div>
-        <div class="third"><h3>Viskas laiku ateina tiems, kurie moka laukti...</h3></div>
+<body class="adminBody">
+    <header id="content-type">
+        <div class="grid-item">
+            <h1>Žmogaus užregistravimo sistema</h1>
+        </div>
+        <div class="grid-item">
+            <h3>Viskas laiku ateina tiems, kurie moka laukti...</h3>
+        </div>
     </header>
     <main>
-        <table style = "border: 1px solid black">
-            <tr>
-                <th colspan="3">Prisijungimas</th>
-                <th colspan="5">Vartotojo duomenys</th>
-                <th colspan="4">Vartotojo Adresas</th>
-                <th></th> 
-            <tr>
-            <tr>
-                <th>Prisijungimo vardas</th>
-                <th>Slaptažodis</th>
-                <th>Rolė</th>
-                <th>Vardas</th>
-                <th>Pavardė</th>
-                <th>Asmens kodas</th>
-                <th>Telefono numeris</th>
-                <th>El.paštas</th>
-                <th>Miestas</th>
-                <th>Gatvė</th>
-                <th>Namas</th>
-                <th>Butas</th>
-                <th>Veiksmai</th>
-            </tr>
-            <tr>
-                
-            </tr>
-        </table>
+        <h1 class="reg">Vartotojų duomenys</h1>
+        <div id="wrapper">
+            <div class="flex-container">
+                <div>Vartotojas</div>
+                <div>Slaptažodis</div>
+                <div>Rolė</div>
+                <div>Vardas</div>
+                <div>Pavardė</div>
+                <div>Asmens kodas</div>
+                <div>Telefonas</div>
+                <div>El. paštas</div>
+                <div>Miestas</div>
+                <div>Gatvė</div>
+                <div>Namas</div>
+                <div>Butas</div>
+            </div>
+            <div class="naviagtion"></div>
+            <div class="lastButtons">
+                <input type="button" class="logout" id="enter" value="Redaguoti" />
+                <input type="button" class="logout" id="update" value="Ištrinti" />
+                <input type="button" class="logout" id="logout" value="Atsijungti" />
+            </div>
+        </div>
     </main>
 </body>
 </html>

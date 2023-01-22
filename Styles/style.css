@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ccc;
+    height: 100%;
   }
 
   header{
@@ -28,11 +29,11 @@ main{
     display: block;
     background-color: #eee;
     max-width: 80%;
-    max-height: 80%;
+    height: 90%;
     margin: 0 auto;
     margin-top: 30px;
     padding: 20px;
-    box-shadow: 1px 1px 2px #eee;
+    box-shadow: 1px 1px 2px #666;
     border-radius: 10px;
 }
 
@@ -42,6 +43,7 @@ main{
     text-align: center;
     color: #333;
     padding-bottom: 20px;
+    font-weight: bold;;
 }
 
 #wrapper{
@@ -49,11 +51,11 @@ main{
     margin: 0px auto;
     padding: 20px;
     background-color: #efffe0;
+    border-radius: 10px;
 }
 
 form{
     width: 50%;
-    margin: 100px auto;
 }
 
 form .inputForm{
@@ -67,20 +69,21 @@ form div{
 
 form div label{
     font-weight: bold;
-   
+    font-size: 15px;
 }
 
 .textInput{
     margin-top: 2px;
-    height: 28px;
+    height: 25px;
     border-bottom: 1px solid #5e6e66;
     font-size: 16px;
     padding: 2px;
-    width: 100%;
-    margin: 2px;
+    width: 180px;
+    margin: 2px auto;
 }
 
-#roles{
+
+#role{
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -88,8 +91,36 @@ form div label{
     background: none;
     border: none;
     border: 1px solid black;
+    background-color: #fff;
     margin-top: 5px;
     margin-bottom: 20px;
+}
+
+div#wrapper div.lastButtons{
+    display: grid;
+    flex-direction: row;
+}
+
+div.upper{
+ margin-bottom: 15px;
+
+}
+
+img{
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+span.myName{
+    vertical-align: top;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table, tr, th, td{
+    padding: 5px;
+    text-align: right;
 }
 
 .btn{
@@ -100,7 +131,19 @@ form div label{
     margin: 10px auto;
 }
 
-.btn:focus{
+.logout{
+    background-color: #333;
+    color: white;
+    width: 120px;
+    height: 35px;
+    margin: 10px auto;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.btn:focus, .logout:focus{
     outline: none;
     border-bottom: 1px solid #666;
 }
@@ -127,49 +170,121 @@ form div label{
     color: yellow;
 }
 
+/*Admin*/
+
+.adminBody{
+    box-sizing: border-box;
+
+}
+
+.flex-container{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-container > div{
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
 /*InputData*/
 
-div#wrapper div.twoForms, .userInfo p, .address p{
+div.flex-container > div p{
+    font-size: 18px;
     font-weight: bold;
-    color: blue;
+    color: #20b2aa;
+}
+div.flex-container > div input#photo{
+    font-size: 14px;
+    color: #ff1f1f;
 }
 
-div#wrapper div.twoForms{
-   
-    position: absolute;
+@media only screen and (min-width: 980px){
+body{
+    min-width: 980px;
+    max-height: 100%;
 }
 
-div#wrapper div.twoForms p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 30px;
+header  {
+    width: 100%;
+    height: 180px;
+} 
+
+.grid-item h1{
+    margin-top: 30px auto;
+    font-size: 30px;
 }
 
-div.TwoForms div.userInfo div.address
-{
-    position: relative;
+.grid-item h3{
+    font-size: 20px;
+    margin-left: 100px;
+}    
+
+main{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#wrapper{
+    width: 90%;
+
+}
+
+.flex-container{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-container > div{
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
+div#wrapper div.lastButtons{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btn{
+
+    width: 190px;
+
+}
+
+form{
+    width: 30%;
+}
+
+form .inputForm{
+    width: 80%;
+    margin: 0 auto;
+}
+
+form div{
+    margin: 3px auto;
+}
+
+form div label{
     font-weight: bold;
-
+    font-size: 15px;
 }
 
-@media only screen and (min-width: 1280px){
-   header h1{
-    font-size: larger;
-   }
-
-    header h3{
-        font-size: large;
-   }
-
-   main{
-       width: 80%;
-       margin-top: 120px;
-   }
-
-   table, tr, th, td{
-        border: 1px solid #000;
-        padding: 10px;
-        text-align: center;
-   }
+.textInput{
+    margin-top: 2px;
+    height: 25px;
+    border-bottom: 1px solid #5e6e66;
+    font-size: 16px;
+    padding: 2px;
+    width: 180px;
+    margin: 2px auto;
+}
 
 }

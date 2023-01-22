@@ -1,6 +1,6 @@
 const enterData = document.querySelector('#enter');
 const photo = document.querySelector('#photo');
-const name = document.querySelector('#name');
+const uName = document.querySelector('#name');
 const surname = document.querySelector('#surname');
 const personalCode = document.querySelector('#personalCode');
 const phoneNumber = document.querySelector('#phoneNumber');
@@ -10,12 +10,12 @@ const houseNumber = document.querySelector('#houseNumber');
 const flatNumber = document.querySelector('#flatNumber');
 const city = document.querySelector('#city');
 
-function AddUserInfo(photo, name, surname, personalCode, phoneNumber, email)
+function AddUserInfo(photo, uName, surname, personalCode, phoneNumber, email)
 {
     const body = 
     {
         photo : photo,
-        name : name,
+        name : uName,
         surname : surname,
         personalCode : personalCode,
         phoneNumber : phoneNumber,
@@ -33,15 +33,15 @@ function AddUserInfo(photo, name, surname, personalCode, phoneNumber, email)
         .then((response) => console.log(response));
 }
 
-function AddAddress(street, houseNumber, flatNumber, city)
+function AddAddress(city, street, houseNumber, flatNumber)
 {
     const body = 
     {
+        city : city,
         street : street,
         houseNumber : houseNumber,
         flatNumber : flatNumber,
-        city : city
-    }
+        }
 
     fetch("", {
         method: "POST",
@@ -54,5 +54,11 @@ function AddAddress(street, houseNumber, flatNumber, city)
         .then((response) => console.log(response));
 }
 
-
+enterData.addEventListener('click', function (e) {
+    e.preventDefault();
+ //   Validate();
+    addUserInfo(photo, uName, surname, personalCode, phoneNumber, email);
+    AddAddress(city, street, houseNumber, flatNumber);
+    
+});
 
