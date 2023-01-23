@@ -36,57 +36,61 @@
                         <div>
                             <input type="text" class="TextInput" name="name" id="name" placeholder="Jūsų vardas"
                                 required />
-                            <div id="name-error" class="val_error"></div>
+                            <div id="uName_error" class="val_error"></div>
                         </div>
                         <div>
                             <input type="text" class="TextInput" name="surname" id="surname" placeholder="Jūsų pavardė"
                                 required />
-                            <div id="surname-error" class="val_error"></div>
+                            <div id="surname_error" class="val_error"></div>
                         </div>
                         <div>
                             <input type="number" class="TextInput" name="code" id="personalCode"
                                 placeholder="Jūsų asmens kodas" length="11" required />
-                            <div id="personal-code-error" class="val_error"></div>
+                            <div id="personal_code_error" class="val_error"></div>
                         </div>
                         <div>
                             <input type="text" class="TextInput" name="phone" id="phoneNumber"
                                 placeholder="Jūsų telefono numeris" length="9" required />
-                            <div id="phonenumber-error" class="val_error"></div>
+                            <div id="phonenumber_error" class="val_error"></div>
                         </div>
                         <div>
                             <input type="email" class="TextInput" name="email" , id="email" ,
                                 placeholder="Jūsų el. pašto adresas" required />
-                            <div id="email-error" class="val_error"></div>
+                            <div id="email_error" class="val_error"></div>
+                        </div>
+                        <input type="button" class="btn" id="enterUserInfo" value="Įvesti" />
+                        </form>
+                        <div>
+                            <p>Gyvenamoji vieta</p>
+
+                            <div>
+                                <Form>
+                                <input type="text" class="TextInput" name="street" id="street" , placeholder="Gatvė"
+                                    required />
+                                <div id="street_error" class="val_error"></div>
+                            </div>
+                            <div>
+                                <input type="number" class="TextInput" name="house" id="houseNumber"
+                                    placeholder="Namo numeris" max-length="3" required />
+                                <div id="houseNumber_error" class="val_error"></div>
+                            </div>
+                            <div>
+                                <input type="number" class="TextInput" name="flat" id="flatNumber"
+                                    placeholder="Buto numeris" max-length="4" required />
+                                <div id="flatNumber_error" class="val_error"></div>
+                            </div>
+                            <div>
+                                <input type="text" class="TextInput" name="city" id="city" placeholder="Miestas"
+                                    required />
+                                <div id="city_error" class="val_error"></div>
+                            </div>
+                            <input type="button" class="btn" id="enterAddress" value="Įvesti" />
+
                         </div>
                     </form>
+
                 </div>
-                <div>
-                    <p>Gyvenamoji vieta</p>
-                    <form action="">
-                        <div>
-                            <input type="text" class="TextInput" name="street" id="street" , placeholder="Gatvė"
-                                required />
-                            <div id="street-error" class="val_error"></div>
-                        </div>
-                        <div>
-                            <input type="number" class="TextInput" name="house" id="houseNumber"
-                                placeholder="Namo numeris" max-length="3" required />
-                            <div id="name-error" class="val_error"></div>
-                        </div>
-                        <div>
-                            <input type="number" class="TextInput" name="flat" id="flatNumber"
-                                placeholder="Buto numeris" max-length="4" required />
-                            <div id="name-error" class="val_error"></div>
-                        </div>
-                        <div>
-                            <input type="text" class="TextInput" name="city" id="city" placeholder="Miesas" required />
-                            <div id="name-error" class="val_error"></div>
-                        </div>
-                        <input type="button" class="btn" id="enter" value="Įvesti" />
-                    </form>
-                </div>
-            </div>
-            <script src="/Scripts/InsertUserInfoToDb.js"></script>
+                <script src="/Scripts/InsertUserInfoToDb.js" defer></script>
     </main>
 </body>
 

@@ -54,6 +54,14 @@
                 <input type="button" class="logout" id="logout" value="Atsijungti" />
             </div>
         </div>
+
+        <script defer>
+            const enterbutton = document.querySelector('#enter');
+            enterbutton.addEventListener('click', function (e){
+                e.preventDefault();
+                window.location.href="enterData.html";
+            });
+        </script>
     </main>
 
 </body>

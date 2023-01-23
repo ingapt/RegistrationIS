@@ -4,7 +4,7 @@ const loginSubmit = document.querySelector('#btnLogin');
 
 function loginUser()
 {
-    fetch("https://localhost:7048/api/User/login",{
+    fetch("https://localhost:7290/api/User/login",{
         method: "POST",
         body: JSON.stringify({
             username: document.getElementById('username').value,
