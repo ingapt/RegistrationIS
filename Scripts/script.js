@@ -1,10 +1,9 @@
 //Registration
 const saveSubmit = document.querySelector('#SubmitReg');
-const usernameInput = document.querySelector('#useName');
+const usernameInput = document.querySelector('#userName');
 const passwordInput = document.querySelector('#password');
 const passwordConfirmation = document.querySelector('#password_confirmation');
 const roleSelector = document.querySelector('#role');
-const text = document.getElementById("successText");
 
 usernameInput.addEventListener("blur", nameVerify, true);
 passwordInput.addEventListener("blur", passwordVerify, true);
@@ -16,7 +15,6 @@ function addUser(username, password, role) {
         password: password,
         role: role,
     };
-
 
     fetch("https://localhost:7290/api/User", {
         method: "POST",
@@ -51,6 +49,8 @@ function Validate() {
         passwordInput.focus();
         return false;
     }
+
+    addUser(usernameInput.value, passwordInput.value, roleSelector.value);
 }
 
 function nameVerify() {
@@ -69,15 +69,13 @@ function passwordVerify() {
     }
 }
 
-function RegistrationSuccess() {
+/*function RegistrationSuccess() {
     text.innerText = "Registracija sėkminga. Galite prisijungti. ";
     text.style.color = "#ff1f1f";
     text.style.fontsize = "15px";
-}
+}*/
 
 saveSubmit.addEventListener('click', function (e) {
     e.preventDefault();
     Validate();
-    addUser(usernameInput.value, passwordInput.value, roleSelector.value);
-    RegistrationSuccess();
 });
