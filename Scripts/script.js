@@ -6,9 +6,9 @@ const passwordConfirmation = document.querySelector('#password_confirmation');
 const roleSelector = document.querySelector('#role');
 const text = document.getElementById("successText");
 
-//usernameInput.addEventListener("blur", nameVerify, true);
-//passwordInput.addEventListener("blur", passwordVerify, true);
-//passwordConfirmation.addEventListener("blur", passwordVerify, true);
+usernameInput.addEventListener("blur", nameVerify, true);
+passwordInput.addEventListener("blur", passwordVerify, true);
+passwordConfirmation.addEventListener("blur", passwordVerify, true);
 
 function addUser(username, password, role) {
     const body = {
@@ -77,7 +77,7 @@ function RegistrationSuccess() {
 
 saveSubmit.addEventListener('click', function (e) {
     e.preventDefault();
- //   Validate();
+    Validate();
     addUser(usernameInput.value, passwordInput.value, roleSelector.value);
     RegistrationSuccess();
 });
